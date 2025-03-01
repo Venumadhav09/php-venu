@@ -32,8 +32,8 @@ pipeline {
                     sshagent(['sshkeypair']) {
                         //chnage the private ip in below code
                         // sh "docker run -itd --name My-first-containe2111 -p 8083:80 akshu20791/2febimg:v1"
-                         sh "ssh -o StrictHostKeyChecking=no ubuntu@172.30.1.195 ${dockerrm}"
-                         sh "ssh -o StrictHostKeyChecking=no ubuntu@172.30.1.195 ${dockerCmd}"
+                         sh "ssh -o StrictHostKeyChecking=no ubuntu@172.30.1.163 ${dockerrm}"
+                         sh "ssh -o StrictHostKeyChecking=no ubuntu@172.30.1.163 ${dockerCmd}"
                     }
                 }
             }
